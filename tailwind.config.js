@@ -1,12 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     colors: {
+      white: "#fff",
       blue: "#1fb6ff",
       purple: "#7e5bef",
       pink: "#ff49db",
@@ -19,10 +18,15 @@ export default {
       "gray-light": "#d3dce6",
     },
     fontFamily: {
-      sans: ["Graphik", "sans-serif"],
-      serif: ["Merriweather", "serif"],
+      serif: ["Montserrat", "sans-serif", ...defaultTheme.fontFamily.sans],
     },
-
+    extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/src/assets/Фон 1.png')",
+        "hero-line": "url('/src/assets/line.png')",
+        "underLine": "url('/src/assets/underLine.png')",
+      },
+    },
     plugins: [],
   },
 };
