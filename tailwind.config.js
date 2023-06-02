@@ -25,7 +25,14 @@ export default {
         "hero-pattern": "url('/src/assets/Фон 1.png')",
         "hero-line": "url('/src/assets/line.png')",
         "underLine": "url('/src/assets/underLine.png')",
+        "aparat": "url('/src/assets/380 1.png')",
+        "cleaner": "url('/src/assets/img-2.png')",
+        "gloves": "url('/src/assets/Перчатки 1.png')",
+        "check": "url('/src/assets/Check 1 1.png')",
       },
+      boxShadow: {
+        '3xl': '0px 0px 20px rgba(29, 31, 33, 0.12)',
+      }
     },
     plugins: [],
   },
