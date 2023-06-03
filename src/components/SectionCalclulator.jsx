@@ -6,12 +6,14 @@ import check from "../assets/Check 1 1.png";
 import telegram from "../assets/telegram.png";
 import whatsapp from "../assets/whatsapp.png";
 import phone from "../assets/ТелефонВруке.png";
-
+import book from "../assets/Книжка3 2.png";
+import cupon from "../assets/Купон.png";
+import upline from "../assets/ВерхнийШейп.png";
 
 const SectionCalclulator = () => {
   return (
     <>
-      <div className="container flex justify-around items-center py-4 w-full lg:w-4/5 relative m-auto">
+      <div className="container-xl flex justify-around items-center py-20 w-full lg:w-4/5 relative m-auto">
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
             <div className="flex items-center w-full bg-blue pl-6 rounded-[30px] overflow-hidden text-white">
@@ -62,21 +64,43 @@ const SectionCalclulator = () => {
               Это бесплатно и ни к чему не обязывает!
             </p>
           </div>
-          <div className="flex justify-around items-center text-center bg-kuhnya bg-blue rounded-3xl">
+          <div className="flex justify-around items-center text-center bg-kuhnya bg-blue rounded-3xl ml-2">
             <div>
-              <h1 className="text-white text-2xl font-bold pt-20">
+              <h1 className="text-white text-xl md:text-2xl font-bold pt-5">
                 Отлично! Ваши ответы получены, менеджер уже приступает к расчёту
               </h1>
-              <p className="text-white text-lg py-4">Где вам удобнее получить расчёт?</p>
+              <p className="text-white text-lg py-4">
+                Где вам удобнее получить расчёт?
+              </p>
               <div className="flex items-center justify-center gap-4 py-4">
-                <a href="#" className="rounded-3xl bg-white py-5 px-20"><img src={telegram}/></a>
-                <a href="#" className="rounded-3xl bg-white py-5 px-20"><img src={whatsapp}/></a>
+                <a href="#" className="rounded-3xl bg-white py-5 px-20">
+                  <img src={telegram} />
+                </a>
+                <a href="#" className="rounded-3xl bg-white py-5 px-20">
+                  <img src={whatsapp} />
+                </a>
               </div>
+              <input
+                type="tel"
+                placeholder="Введите ваш телефон"
+                className="px-[110px] py-5 rounded-full"
+              />
+              <button className="px-[100px] py-5 my-4 rounded-full bg-yellow text-white">
+                Получить расчёт и бонусы
+              </button>
             </div>
-            <div className="relative">
+            <div className="relative hidden md:block w-full pt-10">
               <img src={phone} />
-              <div>
-                
+              <div className="flex items-center absolute bottom-12 rounded-[30px] bg-white text-left overflow-hidden px-4 py-2">
+                <div className="px-5">
+                  <h1 className="text-blue">Ваши бонусы:</h1>
+                  <li>Скидка 10% на первый заказ</li>
+                  <li>Книга «Магическая уборка»</li>
+                </div>
+                <div className="flex items-center">
+                  <img src={book} />
+                  <img src={cupon} className="-mb-20 -mr-5  hidden lg:block" />
+                </div>
               </div>
             </div>
           </div>

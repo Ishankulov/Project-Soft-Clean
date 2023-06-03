@@ -8,7 +8,7 @@ const Slider = () => {
     <>
       <div className="container-xl w-full bg-hero-pattern relative">
         <div className="flex justify-around w-full ml-auto overflow-hidden">
-          <div className="flex relative md:absolute lg:left-40 xl:left-80 z-10 flex-col text-gray-dark py-20">
+          <div className="flex relative md:absolute lg:left-[100px] xl:left-[200px] z-10 flex-col text-gray-dark py-20">
             <div className="">
               <h1 className="text-2xl font-bold">
                 Бережная уборка квартир и домов <br /> в СПБ по фиксированной
