@@ -8,13 +8,12 @@ import whatsapp from "../assets/whatsapp.png";
 import phone from "../assets/ТелефонВруке.png";
 import book from "../assets/Книжка3 2.png";
 import cupon from "../assets/Купон.png";
-import upline from "../assets/ВерхнийШейп.png";
 
 const SectionCalclulator = () => {
   return (
     <>
-      <div className="container-xl flex justify-around items-center py-20 w-full lg:w-4/5 relative m-auto">
-        <div>
+      <div className="container-xl flex justify-around items-center pt-20 pb-40 w-full lg:w-4/5 relative m-auto">
+        <div className="mx-5">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
             <div className="flex items-center w-full bg-blue pl-6 rounded-[30px] overflow-hidden text-white">
               <h5>Немецкое и Американское оборудование</h5>
@@ -64,15 +63,15 @@ const SectionCalclulator = () => {
               Это бесплатно и ни к чему не обязывает!
             </p>
           </div>
-          <div className="flex justify-around items-center text-center bg-kuhnya bg-blue rounded-3xl ml-2">
-            <div>
+          <div className="flex items-center text-center bg-kuhnya bg-no-repeat bg-cover bg-blue rounded-3xl">
+            <div className="xl:ml-10">
               <h1 className="text-white text-xl md:text-2xl font-bold pt-5">
                 Отлично! Ваши ответы получены, менеджер уже приступает к расчёту
               </h1>
               <p className="text-white text-lg py-4">
                 Где вам удобнее получить расчёт?
               </p>
-              <div className="flex items-center justify-center gap-4 py-4">
+              <div className="flex items-center justify-center gap-10 py-4">
                 <a href="#" className="rounded-3xl bg-white py-5 px-20">
                   <img src={telegram} />
                 </a>
@@ -89,9 +88,9 @@ const SectionCalclulator = () => {
                 Получить расчёт и бонусы
               </button>
             </div>
-            <div className="relative hidden md:block w-full pt-10">
-              <img src={phone} />
-              <div className="flex items-center absolute bottom-12 rounded-[30px] bg-white text-left overflow-hidden px-4 py-2">
+            <div className="relative hidden md:block  w-4/5 pt-10">
+              <img src={phone} className="m-auto object-contain"/>
+              <div className="flex items-center absolute bottom-20  left-0 2xl:left-[200px] rounded-[30px] bg-white text-left overflow-hidden px-4 py-2">
                 <div className="px-5">
                   <h1 className="text-blue">Ваши бонусы:</h1>
                   <li>Скидка 10% на первый заказ</li>

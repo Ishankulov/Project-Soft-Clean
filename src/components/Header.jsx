@@ -27,7 +27,7 @@ const Header = () => {
   //   setTheme(theme === "dark" ? "light" : "dark");
   // };
   return (
-    <header className="container flex justify-around items-center py-4 w-full lg:w-4/5 m-auto">
+    <header className="container flex justify-between items-center py-4 w-full lg:w-4/5 m-auto">
       <div className="flex flex-row">
         <img src={logo} />
         <span className="ml-2 mt-1">
