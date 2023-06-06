@@ -12,7 +12,7 @@ import cupon from "../assets/Купон.png";
 const SectionCalclulator = () => {
   return (
     <>
-      <div className="container-xl flex justify-around items-center pt-20 pb-40 w-full lg:w-4/5 relative m-auto">
+      <div className="container-xl lg:container flex justify-around items-center pt-20 pb-40 w-full lg:w-4/5 relative m-auto">
         <div className="mx-5">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
             <div className="flex items-center w-full bg-blue pl-6 rounded-[30px] overflow-hidden text-white">

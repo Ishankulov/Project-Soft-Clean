@@ -8,12 +8,17 @@ import venik from "../assets/Веник 1.png";
 import kroshka from "../assets/shokoladnaya-kroshka-80 (1) 2.png";
 import clock from "../assets/Часы 1.png";
 import atention from "../assets/Внимание 1.png";
+import cheked from "../assets/Check 2.png";
+import klipboard from "../assets/Клипборд 1.png";
+import bottle from "../assets/Бутылка2 1.png";
+import litleBottle from "../assets/Бутылка 1.png";
+import guard from "../assets/Щит 1.png";
 
 const YouKnowCards = () => {
   return (
     <div className="bg-[#F2F9FF] relative">
       <img src={upline} className="w-full absolute -top-4 md:-top-10" />
-      <div className="container-2xl lg:container relative m-auto pt-20">
+      <div className="container-2xl lg:container w-full lg:w-4/5 relative m-auto pt-20">
         <div className="text-center">
           <button
             href="#"
@@ -53,12 +58,12 @@ const YouKnowCards = () => {
               <img src={comet} className="absolute right-0 top-8" />
             </div>
             <div className="p-8 text-gray-dark">
-              <h1 className="text-lg font-bold py-4">Чёрная касса</h1>
+              <h1 className="text-lg font-bold py-4">Порча имущества</h1>
               <p>
-                Клининговые компании завлекают клиентов обманчиво низкой
-                стоимостью. Менеджеры умалчивают стоимость доп. работ, а на
-                объекте, когда клиенту сложно отказать, насчитывают стоимость
-                выше заявленной.
+                Неправильно подобранные клинерами моющие средства могут
+                повредить поверхность мебели и бытовых приборов. Неправильная
+                влажная уборка может испортить новый паркет или повредить
+                проводку.
               </p>
             </div>
           </div>
@@ -68,12 +73,11 @@ const YouKnowCards = () => {
               <img src={kroshka} className="xl:absolute bottom-0 right-20" />
             </div>
             <div className="p-8 text-gray-dark">
-              <h1 className="text-lg font-bold py-4">Чёрная касса</h1>
+              <h1 className="text-lg font-bold py-4">Имитация деятельности</h1>
               <p>
-                Клининговые компании завлекают клиентов обманчиво низкой
-                стоимостью. Менеджеры умалчивают стоимость доп. работ, а на
-                объекте, когда клиенту сложно отказать, насчитывают стоимость
-                выше заявленной.
+                Клинеры часто выполняют свою работу недобросовестно. Не убирают
+                труднодоступные места и экономят моющее средство. В результате
+                Вы получаете некачественную уборку и испорченное настроение.
               </p>
             </div>
           </div>
@@ -85,12 +89,13 @@ const YouKnowCards = () => {
               <img src={clock} className="" />
             </div>
             <div className="p-8 text-gray-dark">
-              <h1 className="text-lg font-bold py-4">Чёрная касса</h1>
+              <h1 className="text-lg font-bold py-4">
+                Безответственность персонала
+              </h1>
               <p>
-                Клининговые компании завлекают клиентов обманчиво низкой
-                стоимостью. Менеджеры умалчивают стоимость доп. работ, а на
-                объекте, когда клиенту сложно отказать, насчитывают стоимость
-                выше заявленной.
+                Клинеры приезжают раньше/позже назначенного времени, что
+                доставляет дискомфорт хозяину. Не соблюдают инструктаж владельца
+                квартиры и нарушают бытовой порядок.
               </p>
             </div>
           </div>
@@ -117,57 +122,55 @@ const YouKnowCards = () => {
             href="#"
             className="bg-yellow text-white px-12 py-4 rounded-full"
           >
-            Обращаясь за помощью к нам, вы можете быть <br/> спокойны за качество и
-            ваш комфорт
+            Обращаясь за помощью к нам, вы можете быть <br /> спокойны за
+            качество и ваш комфорт
           </button>
           <div className="grid gird-cols-1 md:grid-cols-2 xl:grid-cols-3 py-5 lg:py-10 gap-5 lg:gap-10 mx-5">
-          <div className="bg-white rounded-[30px] overflow-hidden">
-            <div className="flex justify-between items-center relative">
-              <img src={kassa} className="" />
-              <img src={check} className="" />
-              <img src={check} className="absolute right-0 -top-8 w-24" />
+            <div className="bg-white rounded-[30px] overflow-hidden">
+              <div className="flex justify-between items-center relative">
+                <img src={cheked} className="z-10" />
+                <img src={klipboard} className="absolute left-16" />
+              </div>
+              <div className="p-8 text-gray-dark text-left">
+                <h1 className="text-lg font-bold py-4">
+                  Честное сотрудничество
+                </h1>
+                <p>
+                  Заранее рассчитаем стоимость услуг, и закрепляем наше
+                  сотрудничество договором. Оплата исключительно по факту
+                  выполнения. Вы проверяете результат и платите тогда, когда он
+                  вас удовлетворяет.
+                </p>
+              </div>
             </div>
-            <div className="p-8 text-gray-dark">
-              <h1 className="text-lg font-bold py-4">Чёрная касса</h1>
-              <p>
-                Клининговые компании завлекают клиентов обманчиво низкой
-                стоимостью. Менеджеры умалчивают стоимость доп. работ, а на
-                объекте, когда клиенту сложно отказать, насчитывают стоимость
-                выше заявленной.
-              </p>
+            <div className="bg-white rounded-[30px] overflow-hidden">
+              <div className="flex justify-start items-center relative">
+                <img src={bottle} className="z-10" />
+                <img src={litleBottle} className="absolute left-24" />
+              </div>
+              <div className="p-8 text-gray-dark text-left">
+                <h1 className="text-lg font-bold py-4">Бережные моющие</h1>
+                <p>
+                  Внимательно подходим к выбору моющих средств. Знаем какие
+                  средства использовать в конкретных случаях, чтобы не повредить
+                  мебель и сохранить прежний блеск поверхностей.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col bg-white rounded-[30px] overflow-hidden">
+              <div className="flex justify-center items-center relative mt-7">
+                <img src={guard} className="" />
+              </div>
+              <div className="p-8 text-gray-dark text-left">
+                <h1 className="text-lg font-bold py-4">Гарантия качества</h1>
+                <p>
+                  На объектах работают от 2 и более опытных клинеров.
+                  Комплексная уборка делается в соответствии с нормами качества.
+                  Блеск от потолка до пола!
+                </p>
+              </div>
             </div>
           </div>
-          <div className="bg-white rounded-[30px] overflow-hidden">
-            <div className="flex justify-between items-center relative">
-              <img src={skovorodka} className="" />
-              <img src={comet} className="absolute right-0 top-8" />
-            </div>
-            <div className="p-8 text-gray-dark">
-              <h1 className="text-lg font-bold py-4">Чёрная касса</h1>
-              <p>
-                Клининговые компании завлекают клиентов обманчиво низкой
-                стоимостью. Менеджеры умалчивают стоимость доп. работ, а на
-                объекте, когда клиенту сложно отказать, насчитывают стоимость
-                выше заявленной.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col bg-white rounded-[30px] overflow-hidden">
-            <div className="flex justify-between items-center relative">
-              <img src={venik} className="" />
-              <img src={kroshka} className="xl:absolute bottom-0 right-20" />
-            </div>
-            <div className="p-8 text-gray-dark">
-              <h1 className="text-lg font-bold py-4">Чёрная касса</h1>
-              <p>
-                Клининговые компании завлекают клиентов обманчиво низкой
-                стоимостью. Менеджеры умалчивают стоимость доп. работ, а на
-                объекте, когда клиенту сложно отказать, насчитывают стоимость
-                выше заявленной.
-              </p>
-            </div>
-          </div>
-        </div>
         </div>
       </div>
     </div>
