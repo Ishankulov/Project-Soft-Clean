@@ -26,6 +26,7 @@ export default {
         "hero-line": "url('/src/assets/line.png')",
         "underLine": "url('/src/assets/underLine.png')",
         "kuhnya": "url('/src/assets/kuhnya.png')",
+        "kuhnya2": "url('/src/assets/kuhnya2.png')",
         
       },
       boxShadow: {

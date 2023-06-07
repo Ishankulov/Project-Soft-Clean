@@ -13,6 +13,10 @@ import klipboard from "../assets/Клипборд 1.png";
 import bottle from "../assets/Бутылка2 1.png";
 import litleBottle from "../assets/Бутылка 1.png";
 import guard from "../assets/Щит 1.png";
+import devushka from "../assets/Девушка3 1.png";
+import buble from "../assets/bubles 2.png";
+import underLine from "../assets/НижнийШейп.png";
+
 
 const YouKnowCards = () => {
   return (
@@ -114,7 +118,7 @@ const YouKnowCards = () => {
             </div>
           </div>
         </div>
-        <div className="text-center py-24">
+        <div className="text-center pt-24 pb-10">
           <h1 className="text-3xl font-bold text-gray-dark py-5">
             Наша работа построена на профессионализме и честности
           </h1>
@@ -170,9 +174,36 @@ const YouKnowCards = () => {
                 </p>
               </div>
             </div>
+            <div className="flex flex-row justify-center grid-flow-col col-span-1 xl:col-span-3 bg-kuhnya2 bg-blue bg-cover rounded-[30px] overflow-hidden">
+              <div className="flex flex-col justify-center p-8 text-gray-dark text-left">
+                <h1 className="text-xl font-bold text-white my-10">
+                  Оставьте заявку на консультацию <br /> и расчёт стоимости
+                  БЕСПЛАТНО
+                </h1>
+                <div className="">
+                  <input
+                    placeholder="Введите ваш телефон"
+                    className="bg-white rounded-full w-auto py-7 px-9  mr-4 mb-5 text-gray"
+                  />
+                  <button
+                    type="submit"
+                    className="bg-yellow rounded-full w-auto py-7 px-24 text-gray"
+                  >
+                    Жду звонка
+                  </button>
+                </div>
+              </div>
+              <div className="hidden xl:block relative">
+                <div className="flex flex-col justify-end items-center relative bottom-0 mt-7">
+                  <img src={devushka} className="z-10 xl:mt-28 2xl:mt-0" />
+                  <img src={buble} className="absolute" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <img src={underLine} className="absolute -bottom-20 -z-10"/>
     </div>
   );
 };
