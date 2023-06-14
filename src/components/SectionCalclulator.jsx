@@ -35,7 +35,7 @@ const SectionCalclulator = () => {
               <img src={check} className="md:-mb-5 right-0" />
             </div>
           </div>
-          <div className="flex items-center list-none justify-around text-center rounded-full my-10 shadow-3xl">
+          <div className="flex justify-around items-center list-none  text-center rounded-full my-10 shadow-3xl">
             <li className="hover:bg-blue hover:text-white rounded-full py-3 px-4 lg:py-7 lg:px-9">
               <a href="">Услуги</a>
             </li>
